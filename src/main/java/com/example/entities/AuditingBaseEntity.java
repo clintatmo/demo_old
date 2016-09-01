@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.entities;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.controllers;
 
-import com.example.domain.User;
-import com.example.service.UserService;
+import com.example.entities.User;
+import com.example.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
