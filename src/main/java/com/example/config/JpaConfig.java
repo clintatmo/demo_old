@@ -51,7 +51,7 @@ public class JpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactory.setDataSource(configureDataSource());
-        entityManagerFactory.setPackagesToScan("com.example.domain");
+        entityManagerFactory.setPackagesToScan("com.example.entities");
         entityManagerFactory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         Properties jpaProperties = new Properties();
