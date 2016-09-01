@@ -7,6 +7,5 @@ public class AuditorAwareImpl implements AuditorAware<String> {
     @Override
     public String getCurrentAuditor() {
         return SecurityContextHolder.getContext().getAuthentication().getName();
-
     }
 }
