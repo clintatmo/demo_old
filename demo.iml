@@ -89,5 +89,18 @@
     <orderEntry type="library" scope="TEST" name="Gradle: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.ow2.asm:asm:5.0.3" level="project" />
     <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.192" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger2:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.swagger:swagger-annotations:1.5.9" level="project" />
+    <orderEntry type="library" name="Gradle: io.swagger:swagger-models:1.5.9" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-spi:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-schema:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-common:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-spring-web:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.mapstruct:mapstruct:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-core:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-ui:2.5.0" level="project" />
   </component>
 </module>
