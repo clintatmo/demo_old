@@ -102,5 +102,6 @@
     <orderEntry type="library" name="Gradle: org.mapstruct:mapstruct:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-core:2.5.0" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-ui:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.flywaydb:flyway-core:4.0.3" level="project" />
   </component>
 </module>
