@@ -4,6 +4,9 @@ import com.example.entities.User;
 import com.example.repositories.UserRepository;
 import com.example.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +16,7 @@ import java.util.List;
  */
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService, UserDetailsService {
 
 
     @Autowired
@@ -26,8 +29,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User findByName(String name) {
-        return userRepository.findByName(name);
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
 
     @Override
@@ -58,5 +61,10 @@ public class UserServiceImpl implements UserService{
     @Override
     public boolean isUserExist(User user) {
         return userRepository.exists(user.getId());
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userRepository.findByUsername(username);
     }
 }
