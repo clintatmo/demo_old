@@ -47,6 +47,22 @@ public class JpaConfig {
 
     }
 
+    /*JAVA CONFIG FLYWAY*/
+
+    /*@Bean(initMethod = "migrate")
+    public Flyway flyway() {
+        Flyway flyway = new Flyway();
+        flyway.clean();
+        //flyway.setInitOnMigrate(true);
+        //flyway.setSchemas("SBA_DIALOG");
+        flyway.setLocations("filesystem:src/main/resources/db/migrations");
+        flyway.setDataSource(configureDataSource());
+        flyway.migrate();
+        return flyway;
+    }*/
+
+    /*JAVA CONFIG FLYWAY*/
+
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
