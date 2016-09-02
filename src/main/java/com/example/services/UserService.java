@@ -1,6 +1,9 @@
 package com.example.services;
 
+import com.example.dtos.UserDto;
 import com.example.entities.User;
+import com.example.entities.VerificationToken;
+import com.example.handlers.EmailExistsException;
 
 import java.util.List;
 
@@ -24,4 +27,14 @@ public interface UserService {
     void deleteAllUsers();
 
     boolean isUserExist(User user);
+
+    User registerNewUserAccount(UserDto account, String generatedPassword) throws EmailExistsException;
+
+    VerificationToken getVerificationToken(String token);
+
+    VerificationToken generateNewVerificationToken(String existingToken);
+
+    User getUser(String token);
+
+    void createVerificationTokenForUser(User user, String token);
 }

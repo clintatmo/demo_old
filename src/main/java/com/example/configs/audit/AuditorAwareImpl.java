@@ -1,4 +1,4 @@
-package com.example.config.audit;
+package com.example.configs.audit;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.core.context.SecurityContextHolder;

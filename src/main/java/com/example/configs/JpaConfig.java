@@ -1,6 +1,6 @@
-package com.example.config;
+package com.example.configs;
 
-import com.example.config.audit.AuditorAwareImpl;
+import com.example.configs.audit.AuditorAwareImpl;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
