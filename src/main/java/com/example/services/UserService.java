@@ -37,4 +37,6 @@ public interface UserService {
     User getUser(String token);
 
     void createVerificationTokenForUser(User user, String token);
+
+    User findUserByUsername(String name);
 }
