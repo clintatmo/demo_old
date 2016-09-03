@@ -171,6 +171,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         tokenRepository.save(myToken);
     }
 
+    public User findUserByUsername(String username) {
+        User user = userRepository.findByUsername(username);
+        return user;
+    }
+
     public VerificationToken generateNewVerificationToken(final String existingVerificationToken) {
         VerificationToken vToken = tokenRepository.findByToken(existingVerificationToken);
         vToken.updateToken(UUID.randomUUID().toString());
