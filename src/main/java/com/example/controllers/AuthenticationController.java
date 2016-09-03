@@ -55,7 +55,6 @@ public class AuthenticationController {
 
             return new ResponseEntity<HashMap<Object, Object>>( objectHashMapp, HttpStatus.OK);
 
-
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
