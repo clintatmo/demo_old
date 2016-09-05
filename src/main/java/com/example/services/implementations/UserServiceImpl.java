@@ -123,7 +123,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
         user.setUserAuthorities(authorityList);
 
-        return user.getAuthorities();
+        Collection<? extends GrantedAuthority> authorities = user.getAuthorities();
+
+        return authorities;
     }
 
     public User registerNewUserAccount(UserDto account, String generatedPassword) throws EmailExistsException {

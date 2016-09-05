@@ -14,6 +14,10 @@ public class Constant {
     public static final int PASSWORD_UPPERCASE_MAX = 2;
     public static final int PASSWORD_NUMBERS_MAX = 2;
     public static int PASSWORD_LENGTH = 8;
+    public static final String USERNAME = "username";
+    public static final String API_KEY = "api_key";
+    public static final long IAT = System.currentTimeMillis() / 1000l; // issued at claim
+    public static final long EXP = 60L; // expires claim. In this case the token expires in 60 seconds
 
     public static final List<CharacterRule> PASSWORD_RULES = Arrays.asList(
             // at least one upper-case character
