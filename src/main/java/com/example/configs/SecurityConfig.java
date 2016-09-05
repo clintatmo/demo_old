@@ -64,7 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .requiresChannel().anyRequest().requiresSecure().and()
                 .formLogin().disable();
 
-        //httpSecurity.portMapper().http(8080).mapsTo(8443);
+        httpSecurity.portMapper().http(8080).mapsTo(8443);
 
         httpSecurity.addFilterBefore(authenticationTokenFilterBean(), UsernamePasswordAuthenticationFilter.class);
     }

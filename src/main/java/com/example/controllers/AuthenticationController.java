@@ -53,8 +53,8 @@ public class AuthenticationController {
         claims.put("iss", issuer);
         claims.put("exp", Constant.IAT + Constant.EXP);
         claims.put("iat", Constant.IAT);
-        claims.put("username", resultAuth.getCredentials());
-        claims.put("password", resultAuth.getPrincipal());
+        claims.put("username", authenticationRequest.getUsername());
+        claims.put("password",  authenticationRequest.getPassword());
 
         final String jwt = signer.sign(claims);
 
