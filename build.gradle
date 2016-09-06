@@ -47,6 +47,8 @@ dependencies {
 	compile('org.passay:passay:1.1.0')
 	compile('org.springframework:spring-context-support:4.3.2.RELEASE')
 	compile('org.codemonkey.simplejavamail:simple-java-mail:3.1.1')
+	compile('org.codehaus.jackson:jackson-mapper-asl:1.9.13')
+	compile('com.fasterxml.jackson.core:jackson-databind:2.8.2')
 
 }
 
