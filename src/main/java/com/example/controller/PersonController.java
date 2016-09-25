@@ -3,6 +3,7 @@ package com.example.controller;
 import com.example.dto.PersonDto;
 import com.example.model.Person;
 import com.example.service.PersonService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/person")
+@Api
 public class PersonController {
 
     @Autowired
