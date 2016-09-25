@@ -16,13 +16,11 @@ import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author Joram Barrez
- */
-@Configuration
-public class DemoDataConfiguration {
 
-  protected static final Logger LOGGER = LoggerFactory.getLogger(DemoDataConfiguration.class);
+@Configuration
+public class DemoDataConfig {
+
+  protected static final Logger LOGGER = LoggerFactory.getLogger(DemoDataConfig.class);
   public static final String SUPERVISOR = "supervisor";
   public static final String RETAIL_OFFICER = "retail-officer";
   public static final String RETAIL_MANAGER = "retail-manager";
