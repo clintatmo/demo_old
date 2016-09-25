@@ -49,6 +49,8 @@ dependencies {
 	compile('org.codemonkey.simplejavamail:simple-java-mail:3.1.1')
 	compile('org.codehaus.jackson:jackson-mapper-asl:1.9.13')
 	compile('com.fasterxml.jackson.core:jackson-databind:2.8.2')
+	compile('org.activiti:activiti-engine:5.21.0')
+	compile('org.activiti:activiti-spring:5.21.0')
 
 }
 
