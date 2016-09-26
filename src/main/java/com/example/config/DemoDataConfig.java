@@ -168,7 +168,7 @@ public class DemoDataConfig {
         .name(deploymentName)
         //.addClasspathResource("processes/FinaBankLoanProcess.bpmn20.xml")
         //.addClasspathResource("processes/commerciele_hypotheek_proces.bpmn20.xml")
-        .addClasspathResource("processes/generic_loan_proces_flow.bpmn20.xml")
+        .addClasspathResource("proces/generic_loan_proces_flow.bpmn20.xml")
         .deploy();
     //}
 
