@@ -23,12 +23,10 @@ public class DemoDataConfig {
 
   protected static final Logger LOGGER = LoggerFactory.getLogger(DemoDataConfig.class);
   public static final String SUPERVISOR = "supervisor";
-  public static final String RETAIL_OFFICER = "retail-officer";
-  public static final String RETAIL_MANAGER = "retail-manager";
-  public static final String BRANCH_MANAGER = "branch-manager";
-  public static final String LEGAL = "legal";
-  public static final String GOEDKEURINGS_STRUKTUUR = "goedkeurings-structuur";
-  public static final String USER = "user";
+  public static final String ADMIN = "ADMIN_ROLE";
+  private static final String FRONT_OFFICE = "front-office";
+  private static final String DISPATCH = "dispatch";
+  private static final String USER = "USER_ROLE";
 
 
   @Autowired
@@ -71,12 +69,12 @@ public class DemoDataConfig {
   }
   
   protected void initDemoGroups() {
-    String[] assignmentGroups = new String[] {SUPERVISOR, RETAIL_OFFICER, RETAIL_MANAGER, BRANCH_MANAGER, LEGAL, GOEDKEURINGS_STRUKTUUR};
+    String[] assignmentGroups = new String[] {SUPERVISOR, FRONT_OFFICE, DISPATCH};
     for (String groupId : assignmentGroups) {
       createGroup(groupId, "assignment");
     }
     
-    String[] securityGroups = new String[] {USER, "admin"};
+    String[] securityGroups = new String[] {ADMIN};
     for (String groupId : securityGroups) {
       createGroup(groupId, "security-role");
     }
@@ -92,32 +90,11 @@ public class DemoDataConfig {
   }
 
   protected void initDemoUsers() {
-    createUser("kermit", "Kermit", "The Frog", "kermit", "kermit@activiti.org",
+    createUser("user", "User", "The Frog", "user", "kermit@activiti.org",
             "org/activiti/explorer/images/kermit.jpg",
-            Arrays.asList(SUPERVISOR, USER),
+            Arrays.asList(USER, ADMIN),
             Arrays.asList("birthDate", "10-10-1955", "jobTitle", "Muppet", "location", "Hollywoord",
                           "phone", "+123456789", "twitterName", "alfresco", "skype", "activiti_kermit_frog"));
-    
-    createUser("gonzo", "Gonzo", "The Great", "gonzo", "gonzo@activiti.org", 
-            "org/activiti/explorer/images/gonzo.jpg",
-            Arrays.asList(RETAIL_OFFICER, USER),
-            null);
-    createUser("fozzie", "Fozzie", "Bear", "fozzie", "fozzie@activiti.org", 
-            "org/activiti/explorer/images/fozzie.jpg",
-            Arrays.asList(RETAIL_MANAGER, USER),
-            null);
-    createUser("gs", "Goedkeurings", "Struktuur", "gs", "goekeuring@struktuur.org",
-            "org/activiti/explorer/images/fozzie.jpg",
-            Arrays.asList(GOEDKEURINGS_STRUKTUUR, USER),
-            null);
-    createUser("bm", "Branch", "Manager", "bm", "branch@manager.org",
-            "org/activiti/explorer/images/fozzie.jpg",
-            Arrays.asList(BRANCH_MANAGER, USER),
-            null);
-    createUser("legal", "Legal", "Officer", "legal", "legal@officer.org",
-            "org/activiti/explorer/images/fozzie.jpg",
-            Arrays.asList(LEGAL, USER),
-            null);
   }
   
   protected void createUser(String userId, String firstName, String lastName, String password, 
@@ -161,17 +138,15 @@ public class DemoDataConfig {
   
   protected void initProcessDefinitions() {
     
-    String deploymentName = "DEV processes";
+    String deploymentName = "CALL_AND_DISPATCH_PROCES";
     List<Deployment> deploymentList = repositoryService.createDeploymentQuery().deploymentName(deploymentName).list();
     
-    //if (deploymentList == null || deploymentList.isEmpty()) {
+    if (deploymentList == null || deploymentList.isEmpty()) {
       repositoryService.createDeployment()
         .name(deploymentName)
-        //.addClasspathResource("processes/FinaBankLoanProcess.bpmn20.xml")
-        //.addClasspathResource("processes/commerciele_hypotheek_proces.bpmn20.xml")
         .addClasspathResource("proces/generic_loan_proces_flow.bpmn20.xml")
         .deploy();
-    //}
+    }
 
   }
 

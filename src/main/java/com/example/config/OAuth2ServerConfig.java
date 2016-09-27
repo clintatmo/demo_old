@@ -17,8 +17,9 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
-/* * * @author Clint Atmosoerodjo #commander *  */
-
+/**
+ * @author catmosoerodjo #commander
+ */
 @Configuration
 public class OAuth2ServerConfig {
 

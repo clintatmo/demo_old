@@ -14,8 +14,9 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 
-/* * * @author Clint Atmosoerodjo #commander *  */
-
+/**
+ * @author catmosoerodjo #commander
+ */
 @RestController
 @RequestMapping(value = "/api/person")
 @Api
