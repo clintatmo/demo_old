@@ -16,8 +16,9 @@ import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.List;
 
-/* * * @author Clint Atmosoerodjo #commander *  */
-
+/**
+ * @author catmosoerodjo #commander
+ */
 @Configuration
 public class DemoDataConfig {
 
