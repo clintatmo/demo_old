@@ -17,9 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by qualogy on 2/22/2016.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 public class ActivitiUserManager extends AbstractManager implements UserIdentityManager {
 
     @Autowired

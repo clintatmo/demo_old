@@ -1,8 +1,7 @@
 package com.example.dto;
 
-/**
- * Created by clint on 9/2/16.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 public class UserDto {
     private String email;
     private String username;

@@ -5,9 +5,7 @@ import com.example.model.Account;
 
 import java.util.Collection;
 
-/**
- * Created by christospapidas on 24012016--.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 public interface AccountService {
 
     Collection<Account> findAll();

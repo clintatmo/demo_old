@@ -4,7 +4,9 @@ package com.example.service;
 import com.example.model.Role;
 
 /**
- * Created by christospapidas on 25012016--.
+
+ * @author catmosoerodjo
+ *
  */
 public interface RoleService {
 

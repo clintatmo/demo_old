@@ -18,9 +18,7 @@ import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by catmosoeredjo on 1/25/2016.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 
 @Configuration
 public class ActivitiConfig {

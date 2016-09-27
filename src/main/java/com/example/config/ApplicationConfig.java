@@ -3,6 +3,8 @@ package com.example.config;
 import com.example.DemoApplication;
 import org.springframework.context.annotation.*;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Configuration
 @PropertySource({"classpath:application.properties"})
 @ComponentScan(basePackageClasses = {DemoApplication.class})

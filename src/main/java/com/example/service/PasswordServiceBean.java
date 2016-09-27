@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Service
 public class PasswordServiceBean implements PasswordService {
 

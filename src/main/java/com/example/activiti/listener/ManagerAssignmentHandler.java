@@ -7,9 +7,7 @@ import org.activiti.engine.delegate.TaskListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by rpique on 12/14/2015.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 @Component
 public class ManagerAssignmentHandler implements TaskListener {
 

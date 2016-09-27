@@ -19,6 +19,8 @@ import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @RestController
 @RequestMapping(value = "/api")
 public class AuthenticationController {

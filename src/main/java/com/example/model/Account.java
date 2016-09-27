@@ -9,7 +9,10 @@ import java.util.Set;
  * The Account class is an entity model object. An Account describes the
  * security credentials and authentication flags that permit access to
  * application functionality.
+ * @author catmosoerodjo
+ *
  */
+
 @Entity
 public class Account {
 

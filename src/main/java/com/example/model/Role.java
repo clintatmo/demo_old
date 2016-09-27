@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
  * within the application. A Role is used to authorize an Account to access a
  * set of application resources.
  *
- * @author Matt Warman
+ * @author catmosoerodjo
  */
 @Entity
 public class Role {

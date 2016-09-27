@@ -10,9 +10,7 @@ import java.util.Date;
 import static com.example.util.Constant.HOOFD_TAAK;
 
 
-/**
- * Created by rpique on 12/13/2015.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 public class CADTaskCreateListener implements TaskListener {
 
     public void notify(DelegateTask delegateTask) {

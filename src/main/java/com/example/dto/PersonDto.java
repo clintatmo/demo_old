@@ -2,9 +2,8 @@ package com.example.dto;
 
 import java.util.Date;
 
-/**
- * Created by clint on 9/5/16.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 public class PersonDto {
 
     private long id;

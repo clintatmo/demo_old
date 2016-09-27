@@ -11,6 +11,8 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Configuration
 public class JavaMailConfig {
 

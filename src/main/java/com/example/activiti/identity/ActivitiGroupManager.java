@@ -20,11 +20,11 @@ import java.util.Map;
 
 /**
 
- * @author jelies
+ * @author catmosoerodjo
  *
  */
 public class ActivitiGroupManager extends AbstractManager implements GroupIdentityManager {
-
+    
     @Autowired
     private CustomUserDetailsService userService;
 

@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Manage the data from database from Role table user
+ * @author catmosoerodjo
  */
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)

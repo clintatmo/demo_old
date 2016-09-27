@@ -4,7 +4,9 @@ import org.activiti.engine.impl.interceptor.Session;
 import org.activiti.engine.impl.interceptor.SessionFactory;
 
 /**
- * Created by qualogy on 2/22/2016.
+
+ * @author catmosoerodjo
+ *
  */
 public class ActivitiGroupManagerFactory implements SessionFactory {
     @Override

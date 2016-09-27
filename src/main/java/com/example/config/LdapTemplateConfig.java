@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.ldap.core.support.LdapContextSource;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Configuration
 public class LdapTemplateConfig {
 

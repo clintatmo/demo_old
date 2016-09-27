@@ -11,6 +11,8 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class AuditingBaseEntity {

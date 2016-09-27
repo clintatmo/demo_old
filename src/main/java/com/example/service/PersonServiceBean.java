@@ -8,9 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by clint on 9/5/16.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 
 @Service
 public class PersonServiceBean implements PersonService {

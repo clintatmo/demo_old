@@ -6,9 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
-/**
- * Created by clint on 9/5/16.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 
 @Entity
 public class Person {

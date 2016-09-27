@@ -3,6 +3,8 @@ package com.example.dto;
 import java.io.Serializable;
 import java.util.Date;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 public class HoofdTaak implements Serializable {
 
     private String naam;

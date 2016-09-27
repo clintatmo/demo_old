@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
  * Account entities. The AccountRepository provides all the data access
  * behaviors exposed by <code>JpaRepository</code> and additional custom
  * behaviors may be defined in this interface.
+ * @author catmosoerodjo
  */
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Long> {

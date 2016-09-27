@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Service
 public interface PasswordService {
 

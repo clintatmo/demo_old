@@ -13,6 +13,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static com.google.common.collect.Lists.newArrayList;
 
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {                                    

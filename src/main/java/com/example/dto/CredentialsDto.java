@@ -1,8 +1,6 @@
 package com.example.dto;
 
-/**
- * Created by clint on 9/3/16.
- */
+/* * * @author Clint Atmosoerodjo #commander *  */
 public class CredentialsDto {
     private String username;
     private String password;

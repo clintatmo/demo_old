@@ -1,5 +1,3 @@
-
-
 package com.example.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +8,8 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+
+/* * * @author Clint Atmosoerodjo #commander *  */
 
 @Component
 public class AccountAuthenticatoinProvider extends AbstractUserDetailsAuthenticationProvider {

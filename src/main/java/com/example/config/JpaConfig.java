@@ -19,6 +19,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.persistence.EntityManagerFactory;
 import java.util.Properties;
 
+
+/* * * @author Clint Atmosoerodjo #commander *  */
+
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.example.repository")
